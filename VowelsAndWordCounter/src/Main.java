@@ -9,8 +9,11 @@ public class Main {
         countVowels count = new countVowels();
         countWords cw = new countWords();
         
-        System.out.println("Number of vowels in the string: " + count.ProcessData(str));
-        System.out.println("Number of words in the string: " + cw.ProcessData(str));
+        System.out.println("Number of vowels in the string: " + count.NumberofVowels(str));
+        count.VowelAppearance(str);
+        
+        System.out.println("Number of words in the string: ");
+        cw.countFreq(str);
     }
     
 }
